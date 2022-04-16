@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #1A1A1A;
+}
+
+header {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
+    color: #F3F3F3;
+}
+
+.menu-principal {
+    width: 1216px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Logo*/
+.menu-principal .logo {
+    text-decoration: none;
+    font-size: 28px;
+}
+
+/*Menu acesso paginas*/
+.menu-principal .menu-navegacao {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+
+}
+
+.menu-principal .menu-navegacao li a {
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #F3F3F3;
+    position: relative;
+}
+
+.menu-principal .menu-navegacao li a:hover {
+    color: #9B9B9B;
+}
+
+.menu-principal .menu-navegacao li a:after {
+
+    content: "";
+    bottom: -8px;
+    display: block;
+    height: 1.5px;
+    position: absolute;
+    background-color: #9B9B9B;
+    width: 0;
+    transition: width 0.5s ease 0s;
+}
+
+.menu-principal .menu-navegacao li a:hover:after {
+    width: 100%;
+}
+
+/*Criar conta e Logar*/
+
+.menu-principal .menu-acessos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+}
+
+.menu-principal .menu-acessos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #F3F3F3;
+    width: 140px;
+    height: 41px;
+}
+
+.menu-principal .menu-acessos #logIn {
+    border: 1px solid #F3F3F3;
+    border-radius: 12px;
+}
+
+.menu-principal .menu-acessos #signUp {
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    color: #1A1A1A;
+}
+
+.menu-principal .menu-acessos #signUp:hover {
+    background-color: #9B9B9B;
+    color: #1A1A1A;
+    border: none;
+}
+
+.menu-principal .menu-acessos #logIn:hover {
+    background-color: #9B9B9B;
+    border: 1px solid #9B9B9B;
+    color: #1A1A1A;
+}
+
+/******************************/
+
+/*Findplace pesquisas*/
+
+.findplace-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 62px;
+    gap: 140px;
+}
+
+
+/*lado esquerdo da view*/
+.findplace-pesquisa .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 20px;
+}
+
+.findplace-pesquisa .left-side main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.findplace-pesquisa .left-side main .title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.findplace-pesquisa .left-side h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 76.5px;
+    text-align: center;
+    color: #F3F3F3;
+    max-width: 452px;
+}
+
+
+.findplace-pesquisa .left-side p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 27.3px;
+    text-align: center;
+    color: #9B9B9B;
+    max-width: 440px;
+}
+
+.findplace-pesquisa .left-side .search-place {
+    background-color: #393939;
+    width: 100%;
+    border-radius: 42px;
+    padding: 10px 12px 10px 24px;
+}
+
+.findplace-pesquisa .left-side .search-place:hover {
+    background-color: #4b4b4b;
+    box-shadow: #1A1A1A 0px 0px 10px;
+}
+
+.findplace-pesquisa .left-side .search-place form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.findplace-pesquisa .left-side .search-place form #txtSearch {
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-weight: 200;
+    font-size: 18px;
+    color: #fff;
+}
+
+.findplace-pesquisa .left-side .search-place form #txtSearch::placeholder {
+    color: #F3F3F3;
+}
+
+.findplace-pesquisa .left-side .search-place form button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.findplace-pesquisa .left-side .buttons-get-it-on {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+}
+
+
+.findplace-pesquisa .left-side .buttons-get-it-on #btn-get-it-on-google-play {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    max-width: 158px;
+}
+
+.findplace-pesquisa .left-side .buttons-get-it-on #btn-get-it-on-google-play img {
+    max-width: 100%;
+    max-height: 40px;
+
+}
+
+.findplace-pesquisa .left-side .buttons-get-it-on #btn-get-it-on-app-store {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    max-width: 158px;
+}
+
+/*lado direito da view*/
+
+.findplace-pesquisa .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-blur {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background-blur img {
+    height: 100vh;
+}
+
+.back2 {
+    left: 70%;
+    transform: translateX(-50%);
+}
+
