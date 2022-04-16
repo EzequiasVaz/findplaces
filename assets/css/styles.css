@@ -276,3 +276,33 @@ header {
     transform: translateX(-50%);
 }
 
+/*optimized search*/
+
+.search-optimized-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 59px;
+}
+
+.search-optimized-with div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos_companys_optimized_search {
+    display: flex;
+    gap: 60px;
+}
+.search-optimized-with p {
+    color: #4b4b4b;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+
