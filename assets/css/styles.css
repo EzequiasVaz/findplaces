@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+
+/*SÓ OS PADRÕES*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +11,9 @@
 }
 
 body {
-    background-color: #1A1A1A;
+    background-image: url('../image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -23,6 +28,41 @@ header {
     font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
     color: #F3F3F3;
 }
+
+.signUp {
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    color: #1A1A1A;
+    padding: 8px 32px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.signUp:hover {
+    background-color: #9B9B9B;
+    color: #1A1A1A;
+    border: none;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 76.5px;
+    text-align: center;
+    color: #F3F3F3;
+    max-width: 462px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 27.3px;
+    text-align: center;
+    color: #9B9B9B; 
+}
+
+
+/*FINAL PADRÕES*/
 
 .menu-principal {
     width: 1216px;
@@ -259,23 +299,6 @@ header {
     justify-content: center;
 }
 
-.background-blur {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.background-blur img {
-    height: 100vh;
-}
-
-.back2 {
-    left: 70%;
-    transform: translateX(-50%);
-}
-
 /*optimized search*/
 
 .search-optimized-with {
@@ -304,5 +327,56 @@ header {
     font-size: 20px;
     line-height: 27px;
 }
+
+/*Segunda view - sobre o app*/
+
+.about-app {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-app main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.about-app .mockup-about-app {
+    margin-top: 80px;
+    max-width: 1216px;
+}
+
+
+/*coments section*/
+
+.coments {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-coments {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.title-coments h1 {
+    max-width: 100%;
+    color: #1A1A1A;
+}
+
 
 
