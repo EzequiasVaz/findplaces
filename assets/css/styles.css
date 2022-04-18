@@ -403,7 +403,7 @@ a:hover {
 }
 
 .carrousel-slide {   
-    animation: scroll 10s linear infinite;
+    animation: scroll 80s linear infinite;
     display: flex;
     width: calc(512px*6);
     gap: 200px;   
