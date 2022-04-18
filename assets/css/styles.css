@@ -11,9 +11,11 @@
 }
 
 body {
+    
+    background-color: #1A1A1A;
     background-image: url('../image/background.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 header {
@@ -60,6 +62,19 @@ p {
     text-align: center;
     color: #9B9B9B; 
 }
+
+a {
+    color: #F3F3F3;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #9B9B9B;
+}
+
+
 
 
 /*FINAL PADRÕES*/
@@ -377,6 +392,235 @@ p {
     max-width: 100%;
     color: #1A1A1A;
 }
+
+
+/*Carousel*/
+
+.carrousel-part {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrousel-slide {   
+    animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(512px*6);
+    gap: 200px;   
+}
+
+.slide-card {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    width: 312px;
+    max-height: 354px;
+    background-color: #fff;
+    margin-top: 58px;
+    border-radius: 20px;    
+    box-shadow: 0px 0px 10px rgba(155, 155, 155, 0.5);
+    padding: 21px 25px 22px 0px;
+    margin-bottom: 90px;    
+}
+
+/*animação transição infinita*/
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(calc(-512px*3));
+	}
+}
+
+
+.aside-profile-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -40px;
+    
+}
+
+.aside-profile-picture img {
+    max-width: 80px;
+    max-height: 80px;
+    box-shadow: 0px 0px 10px rgba(155, 155, 155, 0.5);
+    border-radius: 80px;
+}
+
+.slide-card main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.title-card p {
+    font-size: 20px;
+    color: #1A1A1A;
+    font-weight: 600;
+}
+
+.content-card p {
+    color: #1A1A1A;
+    text-align: left;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.name-local-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-local-links p {
+    color: #9B9B9B;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name-local-links #link-store {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+
+.name-local-links #link-store p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.like-and-link {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 12px;
+}
+
+.like-and-link a:hover {
+    filter: invert(100%) sepia(0%) saturate(1735%) hue-rotate(191deg) brightness(37%) contrast(94%);    
+}
+
+
+/*testado e aprovado*/
+.tested-approved {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 30px;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background-color: #1A1A1A;
+    margin-top: 71px;
+}
+
+footer .logo {
+    font-size: 32px;
+}
+
+.contents-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 176px;
+}
+
+.all-medias-link {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-media a:hover {
+    filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(89%)
+}
+
+.ref-mobile-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.ref-mobile-app p {
+    color: #F3F3F3;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.ref-mobile-app .download-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.ref-mobile-app .download-app img {
+    max-width: 132px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.footer-links a {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.contents-footer-links-title {
+    color: #F3F3F3;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.rodape p {
+    color: #F3F3F3;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.rodape p a {
+    font-size: 12px;
+    font-weight: 700;
+}
+
 
 
 
