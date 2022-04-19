@@ -47,9 +47,9 @@ if (pageWidth <= 600) {
     mockupAboutApp.style.display = 'none'
     let img1 = document.createElement("img")
     let img2 = document.createElement("img")
-    img1.src = "../assets/image/mockup-about-app-mobile(1).svg"
+    img1.src = "../image/mockup-about-app-mobile(1).svg"
     img1.classList.add("mockup-about-app-mobile")
-    img2.src = "../assets/image/mockup-about-app-mobile(2).svg"
+    img2.src = "../image/mockup-about-app-mobile(2).svg"
     img2.classList.add("mockup-about-app-mobile")
     mockupsAboutAppMobile.appendChild(img1)
     mockupsAboutAppMobile.appendChild(img2)
