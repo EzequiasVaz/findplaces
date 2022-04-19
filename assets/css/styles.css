@@ -11,11 +11,10 @@
 }
 
 body {
-    
     background-color: #1A1A1A;
     background-image: url('../image/background.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 header {
@@ -60,7 +59,7 @@ p {
     font-weight: 200;
     line-height: 27.3px;
     text-align: center;
-    color: #9B9B9B; 
+    color: #9B9B9B;
 }
 
 a {
@@ -74,6 +73,9 @@ a:hover {
     color: #9B9B9B;
 }
 
+.menu-mobile {
+    display: none;
+}
 
 
 
@@ -171,6 +173,10 @@ a:hover {
     background-color: #9B9B9B;
     border: 1px solid #9B9B9B;
     color: #1A1A1A;
+}
+
+.colapsed-menu {
+    display: none;
 }
 
 /******************************/
@@ -334,6 +340,7 @@ a:hover {
     display: flex;
     gap: 60px;
 }
+
 .search-optimized-with p {
     color: #4b4b4b;
     font-family: 'Manrope';
@@ -402,36 +409,36 @@ a:hover {
     overflow: hidden;
 }
 
-.carrousel-slide {   
-    animation: scroll 80s linear infinite;
+.carrousel-slide {
+    animation: scroll 60s linear infinite;
     display: flex;
     width: calc(512px*6);
-    gap: 200px;   
+    gap: 200px;
 }
 
 .slide-card {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     gap: 20px;
     width: 312px;
     max-height: 354px;
     background-color: #fff;
     margin-top: 58px;
-    border-radius: 20px;    
+    border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(155, 155, 155, 0.5);
     padding: 21px 25px 22px 0px;
-    margin-bottom: 90px;    
+    margin-bottom: 90px;
 }
 
 /*animação transição infinita*/
 @keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
+    0% {
+        transform: translateX(0);
+    }
 
-	100% {
-		transform: translateX(calc(-512px*3));
-	}
+    100% {
+        transform: translateX(calc(-512px*3));
+    }
 }
 
 
@@ -440,7 +447,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     margin-left: -40px;
-    
+
 }
 
 .aside-profile-picture img {
@@ -510,7 +517,7 @@ a:hover {
 }
 
 .like-and-link a:hover {
-    filter: invert(100%) sepia(0%) saturate(1735%) hue-rotate(191deg) brightness(37%) contrast(94%);    
+    filter: invert(100%) sepia(0%) saturate(1735%) hue-rotate(191deg) brightness(37%) contrast(94%);
 }
 
 
@@ -532,7 +539,6 @@ footer {
     justify-content: center;
     gap: 70px;
     background-color: #1A1A1A;
-    margin-top: 71px;
 }
 
 footer .logo {
@@ -543,6 +549,7 @@ footer .logo {
     display: flex;
     align-items: flex-start;
     gap: 176px;
+    margin-top: 71px;
 }
 
 .all-medias-link {
@@ -622,5 +629,307 @@ footer .logo {
 }
 
 
+/*ajustes medias querys*/
 
 
+/*estrutura mobile*/
+@media (max-width: 600px) {
+
+    /*menu principal*/
+    .menu-principal {
+        display: none;
+    }
+
+    /*menu-mobile*/
+
+    .menu-mobile {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .top-menu {
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+
+    .menu-mobile .logo {
+        font-size: 28px;
+    }
+
+    .colapsed-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: 1px solid #F3F3F3;
+        border-radius: 8px;
+        padding: 12px 10px;
+    }
+
+    .colapsed-menu .hamburguer-item-1,
+    .colapsed-menu .hamburguer-item-2,
+    .colapsed-menu .hamburguer-item-3 {
+        background-color: #F3F3F3;
+        width: 30px;
+        height: 1px;
+        border-radius: 10px;
+
+    }
+
+    /*animações hamburguer*/
+    @keyframes returnColapsedMenu {
+        0% {
+            opacity: 0;
+            transform: translateY(-45px) rotate(-200deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0) rotate(0deg);
+        }
+    }
+
+    @keyframes btnCloseMenuEntranceTop {
+        0% {
+            opacity: 0;
+            transform: translateX(45px) rotate(45deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0px, -5px) rotate(45deg);
+        }
+    }
+
+    @keyframes btnCloseMenuEntranceBottom {
+        0% {
+            opacity: 0;
+            transform: translateX(45px) rotate(45deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0px, 7px) rotate(-45deg);
+        }
+    }
+
+    /*Nova navigation só para mobile*/
+
+    .menu-principal-mobile {
+        background-color: #F3F3F3;
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px 10%;
+        z-index: 1;
+        display: none;
+        box-shadow: 0px 1px 8px #F3F3F3;
+    }
+
+    .menu-principal-mobile li {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .menu-acessos-mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .menu-acessos-mobile a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 300;
+        text-decoration: none;
+        width: 140px;
+        height: 41px;
+    }
+
+    .menu-acessos-mobile #logIn {        
+        color: #1A1A1A;
+        border: 1px solid #1A1A1A;
+        border-radius: 12px;
+    }
+
+    .menu-acessos-mobile #signUp {
+        background-color: #1A1A1A;
+        color: #F3F3F3;
+        border-radius: 12px;
+    }
+
+    .menu-acessos-mobile #signUp:hover {
+        background-color: #F3F3F3;
+    }
+
+    .menu-acessos-mobile #logIn:active {
+        background-color: #1A1A1A;
+        color: #F3F3F3;
+    }
+
+    .menu-navegacao-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-navegacao-mobile li {
+       display: flex;
+       
+    }
+
+    .menu-navegacao-mobile a {
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+        color: #1A1A1A;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .menu-navegacao-mobile a:active, .menu-navegacao-mobile li:active {
+        color: #F3F3F3;
+        background-color: #1A1A1A;
+        border-radius: 12px;
+    }
+    
+    /*Fim do navigation*/
+
+    /*primeira section*/
+
+    .findplace-pesquisa {
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-side {
+        justify-content: center;
+        max-width: 90%;
+    }
+    
+    .left-side .title h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .left-side .title p {
+        font-size: 16px;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .right-side img {
+        width: 80%;
+    }
+
+    .search-place form {
+        gap: 5px;
+    }
+
+    .search-optimized-with {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logos_companys_optimized_search {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /*fim primeira section*/
+
+    /*segunda section*/
+    .about-app {
+        margin-top: 40px;
+        width: 100%;
+        gap: 70px;
+    }
+
+    .about-app .title-subtitle h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .mockup-about-app {
+        width: 100%;
+    }
+
+    .mockups-about-app-mobile {
+        display: none;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .mockup-about-app-mobile {        
+        width: 100%;
+    }
+
+    /*terceira section - comentarios*/
+    .coments .title-coments {
+        margin-top: 40px;
+    }
+    .coments .title-coments h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .tested-approved {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .tested-approved p {
+        font-size: 16px;
+    }
+
+    .img-tested-approved-mobile {
+       max-width: 90%
+    }
+
+    /*fim da terceira seccao - comentarios*/
+
+
+    /*footer*/
+
+    .contents-footer {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;       
+    }
+
+    .footer-links {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rodape {
+        max-width: 90%;
+    }
+
+    .rodape p {
+        font-size: 10px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+}
