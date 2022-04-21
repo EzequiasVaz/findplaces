@@ -82,7 +82,7 @@ a:hover {
 /*FINAL PADRÕES*/
 
 .menu-principal {
-    width: 1216px;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,7 +188,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-top: 62px;
-    gap: 140px;
+    gap: 10%;
 }
 
 
@@ -372,7 +372,7 @@ a:hover {
 
 .about-app .mockup-about-app {
     margin-top: 80px;
-    max-width: 1216px;
+    width: 80%;
 }
 
 
@@ -535,7 +535,7 @@ a:hover {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 70px;
     background-color: #1A1A1A;
@@ -546,9 +546,11 @@ footer .logo {
 }
 
 .contents-footer {
+    width: 100%;
     display: flex;
     align-items: flex-start;
-    gap: 176px;
+    justify-content: center;
+    gap: 12%;
     margin-top: 71px;
 }
 
@@ -617,6 +619,10 @@ footer .logo {
     font-size: 16px;
 }
 
+.rodape {
+    align-self: center;
+}
+
 .rodape p {
     color: #F3F3F3;
     font-weight: 700;
@@ -625,7 +631,7 @@ footer .logo {
 
 .rodape p a {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 700;    
 }
 
 
@@ -633,7 +639,8 @@ footer .logo {
 
 
 /*estrutura mobile*/
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+
 
     /*menu principal*/
     .menu-principal {
@@ -646,14 +653,14 @@ footer .logo {
         height: 100%;
         width: 100%;
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
     }
 
     .top-menu {
-        padding: 20px 10%;
+        padding: 20px 5%;
         display: flex;
         justify-content: space-between;
-        align-items: center;        
+        align-items: center;
     }
 
     .menu-mobile .logo {
@@ -752,7 +759,7 @@ footer .logo {
         height: 41px;
     }
 
-    .menu-acessos-mobile #logIn {        
+    .menu-acessos-mobile #logIn {
         color: #1A1A1A;
         border: 1px solid #1A1A1A;
         border-radius: 12px;
@@ -779,8 +786,8 @@ footer .logo {
     }
 
     .menu-navegacao-mobile li {
-       display: flex;
-       
+        display: flex;
+
     }
 
     .menu-navegacao-mobile a {
@@ -792,12 +799,13 @@ footer .logo {
         font-weight: 300;
     }
 
-    .menu-navegacao-mobile a:active, .menu-navegacao-mobile li:active {
+    .menu-navegacao-mobile a:active,
+    .menu-navegacao-mobile li:active {
         color: #F3F3F3;
         background-color: #1A1A1A;
         border-radius: 12px;
     }
-    
+
     /*Fim do navigation*/
 
     /*primeira section*/
@@ -812,7 +820,7 @@ footer .logo {
         justify-content: center;
         max-width: 90%;
     }
-    
+
     .left-side .title h1 {
         font-size: 38px;
         line-height: 50px;
@@ -840,9 +848,17 @@ footer .logo {
         gap: 20px;
     }
 
+    .search-optimized-with div p {
+        font-size: 16px;
+    }
+
     .logos_companys_optimized_search {
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
+    }
+
+    .logos_companys_optimized_search img {
+        max-width: 20%;
     }
 
     /*fim primeira section*/
@@ -869,7 +885,7 @@ footer .logo {
         width: 90%;
     }
 
-    .mockup-about-app-mobile {        
+    .mockup-about-app-mobile {
         width: 100%;
     }
 
@@ -877,6 +893,7 @@ footer .logo {
     .coments .title-coments {
         margin-top: 40px;
     }
+
     .coments .title-coments h1 {
         font-size: 38px;
         line-height: 50px;
@@ -894,7 +911,7 @@ footer .logo {
     }
 
     .img-tested-approved-mobile {
-       max-width: 90%
+        max-width: 90%
     }
 
     /*fim da terceira seccao - comentarios*/
@@ -905,7 +922,7 @@ footer .logo {
     .contents-footer {
         flex-direction: column;
         gap: 40px;
-        align-items: center;       
+        align-items: center;
     }
 
     .footer-links {
@@ -920,16 +937,57 @@ footer .logo {
     .rodape p {
         font-size: 10px;
     }
+
+}
+
+
+@media (min-width:900px) and (max-width: 1279px) {
+
+    /*menu principal*/
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-principal {
+        width: 90%;
+    }
+
+    .findplace-pesquisa {
+        gap: 0;
+    }
+
+    .findplace-pesquisa .left-side h1 {
+        font-size: 48px;
+    }
+
+    .findplace-pesquisa .left-side p {
+        align-self: center;
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+    .right-side img {
+        max-width: 95%;
+    }
+
+    .findplace-pesquisa .left-side .search-place {
+        align-self: center;
+        width: 90%;
+    }
+
+    .search-optimized-with {
+        max-width: 90%;
+        align-self: center;
+    }
+
+    .about-app .mockup-about-app {
+        max-width: 100%;
+    }
+
+
+    .contents-footer {
+        gap: 10%;
+    }
     
-
-
-
-
-
-
-
-
-
-
-
 }
