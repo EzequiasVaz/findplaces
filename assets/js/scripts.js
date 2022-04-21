@@ -62,13 +62,15 @@ let placesPage = document.getElementById("places")
 let ContactPage = document.getElementById('contactUs')
 let urlAtual = window.location.pathname /*busca só o local depois do host*/
 
-if (urlAtual === '/search.html') {
+if (urlAtual === '/findplaces/search.html') {
     searchPage.classList.add('active')
-} else if (urlAtual === '/places.html') {
+} else if (urlAtual === '/findplaces/places.html') {
     placesPage.classList.add('active')
-} else if (urlAtual == '/contact-us.html') {
+} else if (urlAtual == '/findplaces/contact-us.html') {
     ContactPage.classList.add('active')
 }
+
+
 
 
 
