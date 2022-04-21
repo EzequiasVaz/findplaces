@@ -71,6 +71,8 @@ if (urlAtual === '/findplaces/search.html') {
 }
 
 
+/*movimentando ul do status com os buttons*/
+
 
 
 

@@ -1022,26 +1022,32 @@ footer .logo {
 
 /*Status*/
 
-.status {
-    margin-top: 2%;
-}
+
 
 .status-section {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 120px;
 }
 
-.status-list {
+.status-list {    
     display: flex;
+    align-items: center;
     gap: 32px;
+    max-width: 43%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .status-item {
     list-style: none;
 }
-
-
 
 .button-show-status {
     cursor: pointer;
@@ -1078,6 +1084,39 @@ footer .logo {
     align-self: center;
     width: 100%;
 }
+
+.arrow-go-left, .arrow-go-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b4b4b;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;      
+}
+
+.arrow-go-left:hover, .arrow-go-right:hover {
+    box-shadow: 0px 0px 8px #9B9B9B;
+}
+
+.arrow-go-left img, .arrow-go-right img {
+    height: 10px;
+}
+
+/*buttons para avançar e voltar o carroseul de status*/
+
+.arrow-go-left {
+    display: none;
+    position: absolute;
+    left: 29%;
+}
+
+.arrow-go-right {
+    position: absolute;
+    right: 29%;
+}
+
+
 
 
 /*Pesquisa*/
