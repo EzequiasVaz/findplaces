@@ -77,6 +77,12 @@ a:hover {
     display: none;
 }
 
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 
 
 /*FINAL PADRÕES*/
@@ -129,6 +135,22 @@ a:hover {
 .menu-principal .menu-navegacao li a:hover:after {
     width: 100%;
 }
+
+.menu-principal .menu-navegacao li .active {
+    color: #9B9B9B;
+}
+
+.menu-principal .menu-navegacao .active:before {
+    content: "";
+    bottom: -8px;
+    display: block;
+    height: 1.5px;
+    position: absolute;
+    background-color: #9B9B9B;
+    width: 100%;
+}
+
+
 
 /*Criar conta e Logar*/
 
@@ -631,7 +653,7 @@ footer .logo {
 
 .rodape p a {
     font-size: 12px;
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 
@@ -989,5 +1011,197 @@ footer .logo {
     .contents-footer {
         gap: 10%;
     }
-    
+
 }
+
+/*Fim da pagina INDEX.HTML*/
+
+
+/*Inicio da Search Page*/
+
+
+/*Status*/
+
+.status {
+    margin-top: 2%;
+}
+
+.status-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-list {
+    display: flex;
+    gap: 32px;
+}
+
+.status-item {
+    list-style: none;
+}
+
+
+
+.button-show-status {
+    cursor: pointer;
+    max-width: 100px;
+    max-height: 101px;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.status-photo-and-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 100%;
+    background: linear-gradient(48deg, rgba(182, 30, 164, 1) 0%, rgba(255, 48, 48, 1) 58%, rgba(122, 174, 255, 1) 100%);
+}
+
+.status-photo-and-circle img {
+    align-self: center;    
+    width: 75px;
+    height: 75px;    
+}
+
+
+.status-name {
+    font-size: 16px;
+    color: #F3F3F3;
+    font-weight: 200;
+    align-self: center;
+    width: 100%;
+}
+
+
+/*Pesquisa*/
+.search-area {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-area .search-place {
+    background-color: #393939;
+    width: 40%;
+    border-radius: 42px;
+    padding: 10px 12px 10px 24px;
+}
+
+.search-area .search-place:hover {
+    background-color: #4b4b4b;
+    box-shadow: #1A1A1A 0px 0px 10px;
+}
+
+.search-area .search-place form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-area .search-place form #txtSearch {
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-weight: 200;
+    font-size: 18px;
+    color: #fff;
+}
+
+.search-area .search-place form #txtSearch::placeholder {
+    color: #F3F3F3;
+}
+
+.search-area .search-place form button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisor {
+    width: 100%;
+    height: 1px;
+    background-color: #393939;
+    margin-top: 2.5%;
+}
+
+/*Make Login*/
+
+.make-login {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.make-login .title {
+    color: #F3F3F3;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.make-login #logIn {
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 1% 10%;
+}
+
+.make-login #logIn:hover {
+    background-color: #9B9B9B;
+}
+
+.continue-with {
+    color: #F3F3F3;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login-with-google-facebook {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+}
+
+.login-with-google-facebook button {
+    border: 3px solid #9B9B9B;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    padding: 10% 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-with-google-facebook button:hover {
+    background-color: #9B9B9B;
+}
+
+.with-problems {
+    font-size: 16px;
+    color: #F3F3F3;
+    font-weight: 200;
+}
+
+.with-problems a {
+    font-weight: 700;
+}
+

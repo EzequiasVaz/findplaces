@@ -55,5 +55,22 @@ if (pageWidth <= 600) {
     mockupsAboutAppMobile.style.display = 'flex'
 }
 
-/**/
+/*marcando pagina atual*/
+
+let searchPage = document.getElementById("search")
+let placesPage = document.getElementById("places")
+let ContactPage = document.getElementById('contactUs')
+let urlAtual = window.location.pathname /*busca só o local depois do host*/
+
+if (urlAtual === '/search.html') {
+    searchPage.classList.add('active')
+} else if (urlAtual === '/places.html') {
+    placesPage.classList.add('active')
+} else if (urlAtual == '/contact-us.html') {
+    ContactPage.classList.add('active')
+}
+
+
+
+
 
