@@ -1,6 +1,9 @@
 let colapsedMenu = document.querySelector(".colapsed-menu")
 let menuPrincipalMobile = document.querySelector('.menu-principal-mobile')
 let hamburguerItens = document.querySelectorAll('.hamburguer-item-1, .hamburguer-item-2, .hamburguer-item-3')
+let urlAtual = window.location.pathname /*busca só o local depois do host*/
+
+
 
 /*menu hamburguer animação*/
 colapsedMenu.addEventListener('click', () => {
@@ -42,7 +45,7 @@ let mockupsAboutAppMobile = document.querySelector('.mockups-about-app-mobile')
 let mockupAboutApp = document.querySelector('.mockup-about-app')
 let pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-if (pageWidth <= 600) {
+if (pageWidth <= 600 && urlAtual == '/findplaces/' || pageWidth <= 600 && urlAtual == '/findplaces/index.html'  ) {
     mockupAboutApp.style.display = 'none'
     let img1 = document.createElement("img")
     let img2 = document.createElement("img")
@@ -60,7 +63,7 @@ if (pageWidth <= 600) {
 let searchPage = document.getElementById("search")
 let placesPage = document.getElementById("places")
 let ContactPage = document.getElementById('contactUs')
-let urlAtual = window.location.pathname /*busca só o local depois do host*/
+
 
 if (urlAtual === '/findplaces/search.html') {
     searchPage.classList.add('active')
@@ -73,8 +76,19 @@ if (urlAtual === '/findplaces/search.html') {
 
 /*movimentando ul do status com os buttons*/
 
+let statusList = document.querySelector('.status-list')
+let btnGoLeft = document.querySelector('.arrow-go-left')
+let btnGoRight = document.querySelector('.arrow-go-right')
+let statusWidth = statusList.scrollWidth
 
 
+btnGoRight.addEventListener('click', () => {
+    statusList.scrollLeft -= -100 * 3    
+})
+
+btnGoLeft.addEventListener('click', () => {
+    statusList.scrollLeft -= 100 * 3    
+})
 
 
 

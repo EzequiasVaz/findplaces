@@ -1034,11 +1034,11 @@ footer .logo {
 .status-list {    
     display: flex;
     align-items: center;
-    gap: 32px;
-    max-width: 43%;
+    max-width: 600px;
     overflow-y: hidden;
     overflow-x: scroll;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -1051,17 +1051,21 @@ footer .logo {
 
 .button-show-status {
     cursor: pointer;
-    max-width: 100px;
-    max-height: 101px;
+    width: 100px;
+    height: 101px;
     background: none;
     outline: none;
     border: none;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .status-photo-and-circle {
+    background: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1072,13 +1076,12 @@ footer .logo {
 
 .status-photo-and-circle img {
     align-self: center;    
-    width: 75px;
-    height: 75px;    
+    width: 66px;
+    height: 66px;    
 }
 
-
 .status-name {
-    font-size: 16px;
+    font-size: 14px;
     color: #F3F3F3;
     font-weight: 200;
     align-self: center;
@@ -1106,17 +1109,14 @@ footer .logo {
 /*buttons para avançar e voltar o carroseul de status*/
 
 .arrow-go-left {
-    display: none;
     position: absolute;
-    left: 29%;
+    left: 28%;
 }
 
 .arrow-go-right {
     position: absolute;
-    right: 29%;
+    right: 28%;
 }
-
-
 
 
 /*Pesquisa*/
