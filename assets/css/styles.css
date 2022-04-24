@@ -1287,6 +1287,14 @@ footer .logo {
 }
 
 
+/*somente btn login da pagina search - ajuste tablet*/
+@media (min-width:600px) and (max-width: 900px) {
+    .make-login #logIn {
+        width: 50%;
+    }
+}
+
+
 @media (min-width:900px) and (max-width: 1100px) {
     /*Search Page*/
 
