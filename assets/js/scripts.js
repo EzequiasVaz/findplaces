@@ -92,3 +92,5 @@ btnGoLeft.addEventListener('click', () => {
 
 
 
+
+
