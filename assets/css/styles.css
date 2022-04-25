@@ -1213,6 +1213,7 @@ footer .logo {
     }
 
     .search-area .search-place {
+        margin-top: 5%;
         width: 90%;
     }
 
@@ -1223,6 +1224,15 @@ footer .logo {
     .make-login #logIn {
         width: 90%;
     }
+    
+    .divisor {
+        margin-top: 10%;
+    }
+
+    .make-login {
+        margin-top: 12%;
+    }
+
 
 
 }
