@@ -57,6 +57,7 @@ aside {
     justify-content: center;
     gap: 32px;
 }
+
 .title-login p {
     color: #1a1a1a;
     font-weight: 400;
@@ -129,6 +130,7 @@ aside {
     border: 2px solid #1A1A1A;
     box-shadow: 0px 0px 5px #9b9b9b;
 }
+
 
 button {
     background: none;

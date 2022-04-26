@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/*SÓ OS PADRÕES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+aside {
+    background-color: #1A1A1A;
+    background-image: url('../image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.back-home {
+    width: 60%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.title-login p {
+    color: #1a1a1a;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.title-login .title {
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 28px;
+}
+
+.login-itens {
+    width: 340px;
+}
+
+
+.login-itens form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.login-id {
+    border: 2px solid #9b9b9b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 13px 22px;
+}
+
+.login-id input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: none;
+    width: 100%;
+}
+
+.login-password {
+    border: 2px solid #9b9b9b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 13px 22px;
+}
+
+.login-password input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: none;
+    width: 100%;
+}
+
+.show-password {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*talvez fazer em JS*/
+.login-id:hover,
+.login-id:active,
+.login-password:hover,
+.login-password:active {
+    border: 2px solid #1A1A1A;
+    box-shadow: 0px 0px 5px #9b9b9b;
+}
+
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #9B9B9B;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 27.3px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.btn-login {
+    background-color: #9b9b9b;
+    cursor: pointer;
+    border-radius: 18px;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px;
+    color: #f3f3f3;
+}
+
+.btn-login:hover {
+    background-color: #1A1A1A;
+}
+
+
+.continue-with {
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login-with-google-facebook {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+}
+
+.login-with-google-facebook button {
+    border: 3px solid #9B9B9B;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    padding: 10% 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-with-google-facebook button:hover {
+    background-color: #9B9B9B;
+}
+
+.terms-and-conditions {
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: 200;
+}
+
+.terms-and-conditions a {
+    font-weight: 700;
+}
+
+
+/*lado direito da tela*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+aside .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+aside .aside-title {
+    display: flex;
+    flex-direction: column;
+}
+
+aside div .title {
+    max-width: 462px;
+    color: #F3F3F3;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 76px;
+}
+
+aside div .sub-title {
+    color: #F3F3F3;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 27px
+}
+
+aside img {
+    max-width: 100%;
+}
+
+.ref-mobile-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.ref-mobile-app p {
+    color: #F3F3F3;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.ref-mobile-app .download-app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.ref-mobile-app .download-app img {
+    max-width: 132px;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+    .back-home {
+        width: 90%;
+    }
+
+    aside {
+        gap: 20px;
+    }
+    aside .main-content {
+        margin-top: 30px;
+    }
+
+    aside .mobile-css {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .terms-and-conditions {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media (min-width:900px) and (max-width: 1280px) {
+
+    .back-home {
+        width: 78%;
+    }
+
+}

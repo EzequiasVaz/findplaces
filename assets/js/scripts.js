@@ -1,3 +1,6 @@
+/* scripts principais  */
+
+
 let colapsedMenu = document.querySelector(".colapsed-menu")
 let menuPrincipalMobile = document.querySelector('.menu-principal-mobile')
 let hamburguerItens = document.querySelectorAll('.hamburguer-item-1, .hamburguer-item-2, .hamburguer-item-3')
